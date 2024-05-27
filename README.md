@@ -33,6 +33,7 @@ Confirmar a criação da tabela
 - npx prisma migrate dev
 
 (O comando acima criará uma migration com um determinado nome)
+
 (Você pode ver a migration criada em "prisma/migrations")
 
 Veja seu banco de dados
