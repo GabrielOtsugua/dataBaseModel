@@ -25,4 +25,4 @@ No arquivo "prisma/schema.prisma" comece a criar as tabelas da sua preferência.
 - created_at DateTime default(now())
 
 - @@map("users")
-}
+- }
