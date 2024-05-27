@@ -47,3 +47,13 @@ Em "src", crie um arquivo "lib/prisma.ts" e adicione:
 - export const prisma = new PrismaClient({
 - log: ['query'],
 - })
+
+Segue o exemplo abaixo para criar um usuário no banco de dados:
+- await prisma.user.create({
+- data: {
+- username,
+- name,
+- }
+- })
+
+- return NextResponse.json("Usuário criado")
