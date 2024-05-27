@@ -10,6 +10,5 @@ Iniciar o prisma
 (No exemplo acima é usado o SQLite, mas é possivel usar outros bancos de dados)
 
 Adicione o novo arquivo ".env" no ".gitignore"
-> .gitignore
-> local env files
-> .env 
+> abaixo do "local env files" ->
+> .env
