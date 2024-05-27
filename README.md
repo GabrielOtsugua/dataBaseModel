@@ -1,5 +1,8 @@
 # Modelo data base
 
+Instalar e configurar o axios
+- https://axios-http.com/ptbr/docs/intro
+
 Instalar o CLI e a dependência do prisma
 - npm i prisma -D
 - npm i @prisma/client
