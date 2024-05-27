@@ -18,7 +18,8 @@ Adicionar o novo arquivo ".env" no ".gitignore"
 
 
 No arquivo "prisma/schema.prisma" comece a criar as tabelas da sua preferência
-. "User" será uma tabela de exemplo, ela terá um "id", "username", "name" e "created_at"
+
+"User" será uma tabela de exemplo, ela terá um "id", "username", "name" e "created_at"
 - model User {
 - id         String @id @default(uuid())
 - username   String @unique
