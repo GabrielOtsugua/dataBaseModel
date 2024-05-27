@@ -29,7 +29,7 @@ No arquivo "prisma/schema.prisma" comece a criar as tabelas da sua preferência
 - }
 
 Confirmar a criação da tabela
--npx prisma migrate dev
+- npx prisma migrate dev
 
 (O comando acima criará uma migration com um determinado nome)
 (Você pode ver a migration criada em "prisma/migrations")
