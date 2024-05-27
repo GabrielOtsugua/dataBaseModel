@@ -12,12 +12,13 @@ Iniciar o prisma
 
 (No exemplo acima é usado o SQLite, mas é possivel usar outros bancos de dados)
 
-Adicione o novo arquivo ".env" no ".gitignore"
+Adicionar o novo arquivo ".env" no ".gitignore"
 > abaixo do "local env files" adicione ->
 > .env
 
 
-No arquivo "prisma/schema.prisma" comece a criar as tabelas da sua preferência. Vou usar "User" como uma tabela de exemplo, ela terá um "id", "username", "name" e "created_at".
+No arquivo "prisma/schema.prisma" comece a criar as tabelas da sua preferência
+"User" será uma tabela de exemplo, ela terá um "id", "username", "name" e "created_at"
 - model User {
 - id         String @id @default(uuid())
 - username   String @unique
@@ -26,3 +27,18 @@ No arquivo "prisma/schema.prisma" comece a criar as tabelas da sua preferência.
 
 - @@map("users")
 - }
+
+Confirmar a criação da tabela
+-npx prisma migrate dev
+
+(O comando acima criará uma migration com um determinado nome)
+(Você pode ver a migration criada em "prisma/migrations")
+
+Veja seu banco de dados
+- npx prisma studio
+
+Em "src", crie um arquivo "lib/prisma.ts" e adicione:
+- import { PrismaClient } from "@prisma/client"
+- export const prisma = new PrismaClient({
+- log: ['query'],
+- })
